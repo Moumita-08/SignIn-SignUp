@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body, html {
+    height: 100%;
+}
+.container {
+    display: flex;
+    height: 100vh; /* 100% of the viewport height */
+}
+.imgbx, .contentbx {
+    width: 50%;
+}
+.imgbx{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #f0f0f0;
+}
+.imgbx img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.contentbx{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    height: 100%;
+}
+.contentbx .logo {
+    position: absolute;
+    top: 0; /* Adjust as needed */
+    align-items: center;
+    /* left: 50%; */
+    transform: translateX(-30%)scale(0.4);
+    width: 100px; /* Adjust width */
+    height: 0; /* Maintain aspect ratio */
+}
+.contentbx form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    margin-top: 150px;
+}
+.contentbx .inup{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* padding: 100px 40px 40px 40px; */
+    gap: 80px;
+}
+.contentbx .inup h4{
+    color: rgba(83, 162, 10, 0.69);
+    /* text-align: center; */
+    font-weight: 600;
+    font-size: 22px;
+    text-transform:capitalize;
+    margin-bottom: 20px;
+    padding-bottom: 10px; /* Adjusted padding-bottom */
+    border-bottom: 2px solid rgba(83, 162, 10, 0.69);
+}
+.contentbx .input-box {
+    width: 100%;
+    margin: 5px 0; /* Adjusted margin */
+    position: relative;
+}
+.contentbx .input-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(43, 77, 3, 0.2);
+}
+.contentbx .input-box input::placeholder{
+    color: rgba(83, 162, 10, 0.69);
+}
+.contentbx .input-box i {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: rgba(83, 162, 10, 0.69);
+}
+.contentbx .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    color: rgba(83, 162, 10, 0.69);
+}
+.remember-forgot label input{
+    accent-color: rgba(83, 162, 10, 0.69);
+    margin-right: 5px;
+    align-items: center;
+}
+.remember-forgot a{
+    color: rgba(80, 162, 3, 0.944);
+    text-decoration:none;
+    font-weight:600;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.contentbx button.btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(83, 162, 10, 0.69);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+.contentbx button.btn:hover {
+    background-color: rgba(57, 111, 7, 0.69);
+}
+.contentbx .register-link {
+    margin-top: 20px;
+    color: rgba(83, 162, 10, 0.69);
+}
+.contentbx .register-link a{
+    color: rgba(80, 162, 3, 0.944);
+    text-decoration:none;
+    font-weight:600;
+}
+.or-icons {
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(83, 162, 10, 0.69);
+}
+.or-icons p {
+    margin-bottom: 10px;
+}
+.social-icons {
+    display: inline-flex;
+}
+.social-icons a {
+    margin-right: 10px;
+    color: rgba(83, 162, 10, 0.69);;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
